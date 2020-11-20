@@ -31,7 +31,7 @@ app.post('/', uploads.single('inputFile'), (req, res) => {
     console.log(result);
 
     // Render result page with image
-    // res.render('result', { image: result.url });
+    res.render('result', { image: result.url });
 
   })
 })
